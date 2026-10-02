@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | Nikhil - Software Developer</title>
+  <meta name="description" content="Deployment status.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="bar">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="32" height="32"><span>Nikhil</span></a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <nav aria-label="Main">
+        <ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <h1>Deployment dashboard</h1>
+    <div class="grid">
+      <div class="card"><h3>Status</h3><p id="d-status">Loading...</p></div>
+      <div class="card"><h3>Version</h3><p id="d-version">-</p></div>
+      <div class="card"><h3>Commit</h3><p id="d-commit">-</p></div>
+      <div class="card"><h3>Environment</h3><p id="d-env">-</p></div>
+    </div>
+    <p>Built at: <span id="d-built">-</span></p>
+    <h2>Pipeline stages</h2>
+    <ul class="stages">
+      <li><span class="ok">Passed</span> Checkout</li><li><span class="ok">Passed</span> Validation</li>
+      <li><span class="ok">Passed</span> Tests</li><li><span class="ok">Passed</span> Build</li>
+      <li><span class="ok">Passed</span> S3 deployment</li><li><span class="ok">Passed</span> CloudFront invalidation</li>
+    </ul>
+    <h2>Deployment history</h2>
+    <div style="overflow-x:auto"><table><thead><tr><th>Version</th><th>Commit</th><th>Status</th><th>Date</th></tr></thead><tbody id="history"></tbody></table></div>
+    <p>Request and cache metrics are in the CloudWatch dashboard created by Terraform.</p>
+  </main>
+  <footer class="site">
+    <p>&copy; <span id="year">2026</span> Nikhil. Hosted on AWS S3 and CloudFront, deployed by GitHub Actions.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Nikhil - Software Developer</title>
+  <meta name="description" content="Get in touch.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="bar">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="32" height="32"><span>Nikhil</span></a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <nav aria-label="Main">
+        <ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <h1>Contact</h1>
+    <p>Send a message and your email app will open with it filled in.</p>
+    <form id="contact-form" novalidate>
+      <label for="name">Name
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <span class="error" id="name-error" role="alert"></span>
+      </label>
+      <label for="email">Email
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <span class="error" id="email-error" role="alert"></span>
+      </label>
+      <label for="message">Message
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error" id="message-error" role="alert"></span>
+      </label>
+      <button class="btn" type="submit">Send message</button>
+      <p id="form-status" role="status"></p>
+    </form>
+  </main>
+  <footer class="site">
+    <p>&copy; <span id="year">2026</span> Nikhil. Hosted on AWS S3 and CloudFront, deployed by GitHub Actions.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Nikhil - Software Developer</title>
+  <meta name="description" content="Selected cloud and DevOps projects.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="bar">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="32" height="32"><span>Nikhil</span></a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <nav aria-label="Main">
+        <ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <h1>Projects</h1>
+    <div class="grid">
+      <article class="card"><h3>Static hosting with CI/CD</h3><p>This site: S3, CloudFront, ACM, Route 53, Terraform and GitHub Actions with OIDC credentials.</p><ul class="tags"><li>AWS</li><li>Terraform</li><li>CI/CD</li></ul></article>
+      <article class="card"><h3>Deployment dashboard</h3><p>A <a href="dashboard.html">status page</a> that shows the version, commit and environment currently live.</p><ul class="tags"><li>JavaScript</li><li>JSON</li></ul></article>
+      <article class="card"><h3>Automated test suite</h3><p>Python tests that check HTML structure, internal links, assets and navigation before every deploy.</p><ul class="tags"><li>Python</li><li>Testing</li></ul></article>
+    </div>
+  </main>
+  <footer class="site">
+    <p>&copy; <span id="year">2026</span> Nikhil. Hosted on AWS S3 and CloudFront, deployed by GitHub Actions.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
