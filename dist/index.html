@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Nikhil - Software Developer</title>
+  <meta name="description" content="Portfolio of a software developer focused on cloud and DevOps.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="bar">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="32" height="32"><span>Nikhil</span></a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <nav aria-label="Main">
+        <ul id="nav-list"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <h1>Software that ships itself to production.</h1>
+      <p>I build web applications and the automated pipelines that test, deploy and monitor them. This site is deployed automatically on every approved change to the main branch.</p>
+      <p><a class="btn" href="projects.html">See my projects</a></p>
+      <img class="banner" src="images/banner.svg" alt="Diagram of a pipeline from commit to test to deploy to production" width="1200" height="360">
+    </section>
+    <h2>What I work with</h2>
+    <ul class="tags">
+      <li>HTML, CSS, JavaScript</li><li>Python</li><li>Git and GitHub</li><li>GitHub Actions</li>
+      <li>AWS S3 and CloudFront</li><li>Terraform</li>
+    </ul>
+  </main>
+  <footer class="site">
+    <p>&copy; <span id="year">2026</span> Nikhil. Hosted on AWS S3 and CloudFront, deployed by GitHub Actions.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

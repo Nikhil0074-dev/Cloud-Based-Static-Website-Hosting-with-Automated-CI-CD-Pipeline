@@ -1,0 +1,10 @@
+{
+  "status": "Deployed",
+  "version": "0.0.0-unknown",
+  "commit": "unknown",
+  "environment": "production",
+  "built_at": "2026-10-01T16:55:18Z",
+  "history": [
+    { "version": "0.0.0-unknown", "commit": "unknown", "status": "Deployed", "date": "2026-10-01T16:55:18Z" }
+  ]
+}

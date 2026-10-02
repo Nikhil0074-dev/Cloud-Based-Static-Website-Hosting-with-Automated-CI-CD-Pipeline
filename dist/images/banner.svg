@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Pipeline banner">
+  <rect width="1200" height="360" fill="#12212B"/>
+  <g fill="none" stroke="#3E6C84" stroke-width="2">
+    <path d="M60 180h240M420 180h240M780 180h360"/>
+  </g>
+  <g fill="#0B6E99"><rect x="300" y="140" width="120" height="80" rx="12"/><rect x="660" y="140" width="120" height="80" rx="12"/></g>
+  <g fill="#F3F6F8"><circle cx="60" cy="180" r="18"/><circle cx="1140" cy="180" r="18" fill="#E0A030"/></g>
+  <g fill="#F3F6F8" font-family="sans-serif" font-size="20" text-anchor="middle">
+    <text x="360" y="186">Test</text><text x="720" y="186">Deploy</text>
+  </g>
+</svg>

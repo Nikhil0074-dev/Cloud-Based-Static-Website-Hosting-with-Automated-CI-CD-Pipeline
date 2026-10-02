@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Nikhil - Software Developer</title>
+  <meta name="description" content="About the developer and how this site is delivered.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="bar">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="32" height="32"><span>Nikhil</span></a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <nav aria-label="Main">
+        <ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <h1>About</h1>
+    <p>I am a software developer and M.Sc. student focused on cloud computing and DevOps. I like systems where a change moves from a commit to a live site without manual steps, and where a bad release can be undone quickly.</p>
+    <h2>How this site is delivered</h2>
+    <div class="grid">
+      <div class="card"><h3>Source</h3><p>Every change goes through a pull request, automated checks and review before it reaches the main branch.</p></div>
+      <div class="card"><h3>Hosting</h3><p>Files sit in a private S3 bucket. CloudFront serves them over HTTPS from edge locations.</p></div>
+      <div class="card"><h3>Recovery</h3><p>S3 versioning keeps earlier files, and a manual workflow redeploys any earlier Git version.</p></div>
+    </div>
+  </main>
+  <footer class="site">
+    <p>&copy; <span id="year">2026</span> Nikhil. Hosted on AWS S3 and CloudFront, deployed by GitHub Actions.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
